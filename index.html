@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Css/homeStyle.css">
+    <link rel="stylesheet" href="Css/navAndFooter.css">
+</head>
+<body >
+    <header>
+        <nav>
+            <section>
+                <h1>Kaleabe Negussie</h1>
+                <img src="images/dropDownIcon.svg" alt="humburger menu icon" onclick="dropDown()" id="humburger">
+            </section>
+            <ul id="nav" class="nav">
+                <li><a href="index.html" style="font-weight:bold;">Home</a></li>
+                <li><a href="webpages/About.html">About</a></li>
+                <li><a href="webpages/Contacts.html">Contacts</a></li>
+                <li><a href="webpages/Services.html">Services</a></li>
+                <li><a href="webpages/PreviousWorks.html">Previous works</a></li>
+                <li><a href="webpages/Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main">
+            <section>
+                <p>Hi I am Kaleabe</p>
+                <div></div>
+            </section>
+            <img src="images/homeBanner.svg" alt="">
+        </section>
+        <article>
+            <h2>welcome</h2>
+            <p>I'm Kaleabe Negussie a software engineer and graphics designer. I am currently student at Addis Ababa University(AAiT). I work as a freelancer in programming and graphics related jobs. Thankyou for visiting my website. </p>
+            <div> </div>
+        </article>
+    </main>
+    <footer>
+        <h2>KALEABE NEGUSSIE</h2>
+        <div class="dashContainer footer">
+            <div class="dashContainer--leftfooter"></div>
+            <div class="dashContainer--rightfooter"></div>
+        </div>
+        <section>
+            <ul class="contacts">
+                <li>🧭ADDIS ABABA,ETHIOPIA</li>
+                <li>📞093499843</li>
+                <li>✉nkaleabe001@gmail.com</li>
+            </ul>
+            <section>
+                <ul>
+                    <li><a href="http://www.facebook.com/kaleabe negussie3"><img src="images/facebookLogo.png" alt="facebook logo"></a></li>
+                    <li><a href="http://www.telegram.com/kaleabe negussie"><img src="images/telegramLogo.png" alt="telegram logo"></a></li>
+                    <li><a href="http://www.instagram.com/kaleabe negussie"><img src="images/instagramLogo.png" alt="instagram logo"></a></li>
+                    <li><a href="http://www.twitter.com/kaleabe negussie"><img src="images/twitterLogo.png" alt="twitter logo"></a></li>
+                </ul>
+            </section>
+        </section>
+        <hr>
+        <p>©2021 Developed by Kaleabe Negussie</p>
+    </footer>
+    <script>
+        
+        function dropDown(){
+            var humburger =  document.getElementById("nav")
+            if ( humburger.className == "nav"){
+                humburger.className += "drop"
+            }
+            else humburger.className= "nav"
+            
+        }
+    </script>
+</body>
+</html>

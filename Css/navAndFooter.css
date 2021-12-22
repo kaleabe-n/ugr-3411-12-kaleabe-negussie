@@ -1,0 +1,156 @@
+:root{--primaryColor: rgb(32, 31, 31)}
+:root{--primaryColor2: rgb(68, 68, 68)}
+:root{--secondaryColor: rgb(202, 202, 202)}
+:root{--secondaryColor2: rgb(144,144,144)}
+body{
+    margin: 0;
+}
+nav section h1{
+    font-family: "cooper black";
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+nav section img{
+    width: 40px;
+    margin: 0;
+    position: relative;
+    top: 0;
+}
+nav section img#close{
+    display: none;
+}
+nav section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+nav{
+    align-items: center;
+    width: 100%;
+    color: rgb(68, 68, 68);
+    padding:  3em 0px;
+    display: flex;
+    flex-flow: column;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    text-align: center;
+    z-index: 100;
+    height: min-content;
+    box-shadow: 0px 5px 5px rgb(134, 143, 153);
+}
+nav ul{
+    list-style-type: none;
+    display: none;
+    flex-flow: column;
+    
+}
+.navdrop{
+    display: flex;
+    flex-flow: column;
+}
+footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    padding: 5% 0;
+    align-items: center;
+}
+footer ul{
+    list-style-type:none;
+    
+}
+nav a,footer a{
+    text-decoration: none;
+    font-weight: lighter;
+}
+nav a:link,footer a:link{
+    color:var(--secondaryColor);
+}
+nav a:visited,footer a:visited{
+    color: var(--secondaryColor2);
+}
+nav a:hover,footer a:hover{
+    color: #2523EB;
+}
+footer hr{
+    margin: 10px;
+}
+footer img{
+    width: 50px;
+    background-color: white;
+    border-radius: 22%;
+    border:0;
+    margin: 2%;
+}
+footer section section li{
+    display: inline;
+}
+footer a{
+    padding: 0;
+}
+footer h2{
+    margin-top: 0 50px;
+}
+
+.dashContainer{
+    display: flex;
+    height: 10px;
+    width: 100px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+.dashContainer--leftfooter{
+    background-color: var(--secondaryColor);
+    width: 100%;
+    height: 100%;
+}
+.dashContainer--rightfooter{
+    background-color: #2523EB;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width:600px) {
+    nav ul{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        padding: 0.5em;
+        margin-top: 10px;
+    }
+    nav ul a{
+        padding: 0.5em;
+    }
+    nav{
+        z-index:10;
+    }
+    nav section img{
+        display: none;
+    }
+    nav section h1{
+        font-size: 40px;
+    }
+    .navdrop{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+@media screen and (min-width:1200px){
+    nav{
+        position: fixed;
+        flex-flow: row;
+        justify-content:space-around;
+        z-index:10;
+    }
+    nav li{
+        padding: 0px;
+        margin: 0;
+    }
+    nav a{
+        padding: 2rem;
+        margin: 0;
+    }
+}

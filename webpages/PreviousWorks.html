@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous works</title>
+    <link rel="stylesheet" href="../Css/previousWorks.css">
+    <link rel="stylesheet" href="../Css/navAndFooter.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section>
+                <h1>Kaleabe Negussie</h1>
+                <img src="../images/dropDownIcon.svg" alt="" onclick="dropDown()" id="humburger">
+                
+            </section>
+            <ul id="nav" class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contacts.html">Contacts</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="PreviousWorks.html" style="font-weight: bold;">Previous works</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <img src="../images/2048.png" alt="2048 game screenshot">
+                <p>2048-A game that was made in python using turtle graphics. It is a puzzle game that the user play by merging numbers until he reaches 2048.</p>
+            </article>
+            <article class="second">
+                <p>HTML tag checker- an html tag checker that is used to check whether all the tags are closed and it also checks whether the tags are real html tags.</p>
+                <img src="../images/htmlTagChecker.png" alt="html tag checker code screenshot">
+            </article>
+            <article>
+                <img src="../images/guessingGame.png" alt="gussing game screenshot">
+                <p>Guessing game – a guessing game that was developed in java using the java fx library for graphical purposes. It is played with computer by guessing numbers.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h2>KALEABE NEGUSSIE</h2>
+        <div class="dashContainer footer">
+            <div class="dashContainer--leftfooter"></div>
+            <div class="dashContainer--rightfooter"></div>
+        </div>
+        <section>
+            <ul>
+                <li>🧭ADDIS ABABA,ETHIOPIA</li>
+                <li>📞093499843</li>
+                <li>✉nkaleabe001@gmail.com</li>
+            </ul>
+            <section>
+                <ul>
+                    <li><a href="http://www.facebook.com/kaleabe negussie3"><img src="../images/facebookLogo.png" alt="facebook logo"></a></li>
+                    <li><a href="http://www.telegram.com/kaleabe negussie"><img src="../images/telegramLogo.png" alt="telegram logo"></a></li>
+                    <li><a href="http://www.instagram.com/kaleabe negussie"><img src="../images/instagramLogo.png" alt="instagram logo"></a></li>
+                    <li><a href="http://www.twitter.com/kaleabe negussie"><img src="../images/twitterLogo.png" alt="twitter logo"></a></li>
+                </ul>
+            </section>
+        </section>
+        <hr>
+        <p>©2021 Developed by Kaleabe Negussie</p>
+    </footer>
+    <script>
+        function dropDown(){
+            var humburger =  document.getElementById("nav")
+            if ( humburger.className == "nav"){
+                humburger.className += "drop"
+            }
+            else humburger.className= "nav"
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body *{
+    margin: 0;
+    padding: 0;
+}
+main{
+    max-width: 100%;
+}
+main section.photos{
+    background-color: #9e9c9c;
+}
+main svg{
+    width: 100%;
+    box-sizing: border-box;
+    height: 800px;
+}
+main svg rect{
+    width: inherit;
+}
+main,footer{
+    position: relative;
+    top: 0px;
+}
+main section.myphoto{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding:auto;
+    align-items: center;
+    background-color: rgb(75, 62, 92);
+    height: 100vh;
+    width: 100%;
+    color: whitesmoke;
+}
+main section.myphoto img{
+    max-width: 300px;
+    z-index: 0;
+}
+main section.myphoto *{
+    padding:3em;
+    margin: auto;
+    line-height: 2em;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+main section ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    overflow: visible;
+    height: 280px;
+    margin: 20% 10%;
+}
+main section ul li{
+    width:20%;
+    box-shadow: rgb(143, 143, 143) 7px 7px 7px 7px;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    z-index: 4;
+    overflow: hidden;
+    height: min-content;
+    position: relative;
+}
+main section ul li:hover div{
+    animation: backgr 0.2s linear both;
+}
+main section.bannerImage{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+main section.bannerImage a{
+    text-decoration: none;
+    font-weight: bold;
+}
+main section.bannerImage p{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main section ul li p{
+    background-color: rgb(202, 202, 202,0);
+    color: #2523EB;
+    border-bottom: 5px solid #2523EB;
+    padding: 2em;
+    z-index: 4;
+}
+main section ul li div{
+    width: 253px;
+    z-index: -2;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    border-top: 5px #2523EB solid;
+    margin: 0;
+    padding: 0;
+}
+main section p a{
+    color: black;
+}
+main section p a:visited{
+    color: rgb(36, 36, 36);
+}
+#freepik--window--inject-2:nth-child(1){
+    animation: moveUp 1s forwards linear  alternate infinite 0.2s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#freepik----inject-2{
+    animation: fadeIn 1.5s linear 0s infinite both alternate;
+}
+#small-gear,#large-gear{
+    animation: rotateGear 5s forwards linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#freepik--plants--inject-2{
+    animation: rotatePlant 1s linear 0s infinite both alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#freepik--Character--inject-2{
+    animation: rotateperson 1s linear 0s infinite both alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes backgr{
+    from {height: 0px;}
+    to{height: 230px;}
+}
+@keyframes moveUp {
+    from{transform: translatey(0px);}
+    to{transform: translatey(-5px);}
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes rotateperson{
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(1.5deg);}
+}
+@keyframes rotatePlant{
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(13deg);}
+}
+@keyframes rotateGear{
+    from{transform: rotate3d(0deg);}
+    to{transform: rotate3d(0.002,0.002,1,360deg);}
+}
+@media screen and (max-width:1000px){
+    main section.photos ul{
+        flex-direction: column;
+        height: fit-content;
+    }
+    main section.photos ul li{
+        width: 40%;
+        margin: 20px;
+    }
+}
+@media screen and (max-width:900px) {
+    main section.photos{
+        height: auto;
+    }
+    main section.myphoto{
+        flex-flow: column;
+        align-items: center;
+    }
+    main,footer{
+        position: relative;
+        top: 50px;
+    }
+}
+@media screen and (max-width:700px) {
+    main section.photos ul li{
+        width:60%;
+    }
+    main section.myphoto img{
+        padding: 0;
+    }
+}

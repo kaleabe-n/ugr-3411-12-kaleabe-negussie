@@ -1,0 +1,65 @@
+body *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(202, 202, 202);
+    margin: 0;
+    padding: 0;
+}
+main,footer{
+    position:relative;
+    top: 120px;
+}
+main section{
+    display: grid;
+    grid-template-rows: repeat(3,1fr); 
+    margin: 5% auto;
+}
+main article{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 3% auto;
+    color: rgb(202, 202, 202);
+    background-color: rgb(68, 68, 68);
+    height: 80%;
+    border: #2523eb solid 5px;
+}
+main article:hover img{
+    transform:rotatez(-3deg);
+    width: 70%;
+}
+main article *{
+    margin: 3%;
+}
+main article img{
+    width: 60%;
+    transition: 1s;
+}
+main article img:first-child{
+    grid-row: 1/2;
+}
+main article img:nth-child(two){
+    grid-row: 2/3;
+    text-align: right;
+}
+main article img:nth-child(3){
+    grid-row: 3/4;
+}
+@media screen and (max-width:670px) {
+    main section article{
+        flex-flow: column;
+        height: max-content;
+    }
+    main section article.second{
+        flex-flow: column-reverse;
+        height: max-content;
+    }
+    main article:hover{
+        transition:none
+    }
+}

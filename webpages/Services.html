@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="../Css/servicesStyle.css">
+    <link rel="stylesheet" href="../Css/navAndFooter.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section>
+                <h1>Kaleabe Negussie</h1>
+                <img src="../images/dropDownIcon.svg" alt="" onclick="dropDown()" id="humburger">
+                
+            </section>
+            <ul id="nav" class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contacts.html">Contacts</a></li>
+                <li><a href="Services.html" style="font-weight:bold;">Services</a></li>
+                <li><a href="PreviousWorks.html">Previous works</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="progress">
+            <ul>
+                <li><h2>HTML <span>80%</span></h2><progress id="htmlProg" max="100" value="80"></progress></li>
+                <li><h2>CSS <span>75%</span></h2><progress id="cssProg"  max="100" value="75"></progress></li>
+                <li><h2>JavaScript <span>85%</span></h2><progress id="JavaScriptProg" max="100" value="85"></progress></li>
+                <li><h2>Django <span>80%</span></h2><progress id="DjangoProg" max="100" value="80"></progress></li>
+                <li><h2>React <span>90%</span></h2><progress id="ReactProg" max="100" value="90"></progress></li>
+                <li><h2>Java <span>95%</span></h2><progress id="JavaProg" max="100" value="95"></progress></li>
+                <li><h2>Python <span>85%</span></h2><progress id="PythonProg" max="100" value="85"></progress></li>
+                <li><h2>C++ <span>70%</span></h2><progress id="cppProg" max="100" value="70"></progress></li>
+                <li><h2>Graphics Design <span>95%</span></h2> <progress id="graphisProg" max="100" value="95"></progress></li>
+            </ul>
+        </section>
+        <section class="services">
+            <h2>Services</h2>
+            <p>My skills are mentioned above and a provide services according to those skills. I also provide other services that are based on the above skills like android and IOS app development and other complete web applications development related jobs.</p>
+        </section>
+    </main>
+    <footer>
+        <h2>KALEABE NEGUSSIE</h2>
+        <div class="dashContainer footer">
+            <div class="dashContainer--leftfooter"></div>
+            <div class="dashContainer--rightfooter"></div>
+        </div>
+        <section>
+            <ul>
+                <li>🧭ADDIS ABABA,ETHIOPIA</li>
+                <li>📞093499843</li>
+                <li>✉nkaleabe001@gmail.com</li>
+            </ul>
+            <section>
+                <ul>
+                    <li><a href="http://www.facebook.com/kaleabe negussie3"><img src="../images/facebookLogo.png" alt="facebook logo"></a></li>
+                    <li><a href="http://www.telegram.com/kaleabe negussie"><img src="../images/telegramLogo.png" alt="telegram logo"></a></li>
+                    <li><a href="http://www.instagram.com/kaleabe negussie"><img src="../images/instagramLogo.png" alt="instagram logo"></a></li>
+                    <li><a href="http://www.twitter.com/kaleabe negussie"><img src="../images/twitterLogo.png" alt="twitter logo"></a></li>
+                </ul>
+            </section>
+        </section>
+        <hr>
+        <p>©2021 Developed by Kaleabe Negussie</p>
+    </footer>
+    <script>
+        function dropDown(){
+            var humburger =  document.getElementById("nav")
+            if ( humburger.className == "nav"){
+                humburger.className += "drop"
+            }
+            else humburger.className= "nav"
+            
+        }
+    </script>
+</body>
+</html>
